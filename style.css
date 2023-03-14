@@ -228,6 +228,26 @@ h4 {
   background-image: var(--gradient-primary);
 }
 
+.icon_money::before {
+  display: inline-block;
+  content: '\1F4B0';
+  transform: rotate(30deg);
+  animation: roll 1.5s infinite;
+  animation-direction: alternate;
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 14px;
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+
 /* FEATURES */
 .features {
   display: grid;
